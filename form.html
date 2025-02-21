@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
 <style>
     button {
         background: #ff6600;
@@ -16,7 +24,8 @@
 </style>
 </head>
 <body style="background-color: bisque;">
-
+<fieldset>
+    <legend style="font-size: larger;">Registration Form</legend>
 <div class="form-container">
     <h2>🐶 Dog Adoption Registration</h2>
     <p>Fill out this form to goto our partners website for adopting dogs.</p>
@@ -55,7 +64,7 @@
         <button type="submit">Submit Application</button>
     </form>
 </div>
-
+</fieldset>
 <script>
     document.getElementById("adoption-form").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevents default form submission (change all too <!--)
@@ -63,3 +72,5 @@
         window.location.href = "https://www.akc.org/";
     });
 </script>
+</body>
+</html>
