@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawsitiveVibes - Forgot Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: bisque;
+        }
+        .forgot-password-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .forgot-password-form h2 {
+            margin-bottom: 20px;
+        }
+        .forgot-password-form input[type="email"],
+        .forgot-password-form input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: none; /* Initially hidden */
+        }
+        .forgot-password-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(255, 196, 244);
+            border: none;
+            border-radius: 5px;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .forgot-password-form button:hover {
+            background-color: rgb(240, 180, 230);
+        }
+        .toggle-options {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="forgot-password-form">
+        <h2>Forgot Password</h2>
+        <form id="resetForm">
+            <input type="email" name="email" placeholder="Enter your email">
+            <input type="tel" name="tel" placeholder="Enter your phone number">
+            <div class="toggle-options">
+                <label>
+                    <input type="radio" name="reset-method" id="useEmail" checked onclick="toggleInputMethod()"> Use Email
+                </label>
+                <label>
+                    <input type="radio" name="reset-method" id="useTel" onclick="toggleInputMethod()"> Use Phone
+                </label>
+            </div>
+            <button type="submit" style="margin-top: 10px;">Reset Password</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleInputMethod() {
+            const emailInput = document.querySelector('input[name="email"]');
+            const telInput = document.querySelector('input[name="tel"]');
+            const useEmail = document.getElementById('useEmail').checked;
+            
+            if (useEmail) {
+                emailInput.style.display = 'block';
+                telInput.style.display = 'none';
+            } else {
+                emailInput.style.display = 'none';
+                telInput.style.display = 'block';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            toggleInputMethod();
+            
+            // Handle form submission
+            document.getElementById("resetForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent actual submission
+                
+                alert("Password reset link sent! Redirecting to Sign In...");
+                
+                // Redirect to sign-in page
+                window.location.href = "signin.html";
+            });
+        });
+    </script>
+</body>
+</html>

@@ -4,31 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PawsitiveVibes</title>
+    
     <style>
-        /* Navbar container   */
+        /* Navbar container */
         .navbar {
-            background-color: rgb(203, 183, 29);  /* Dark background   */
-            padding: 15px; /* Add padding inside   */
+            background-color: rgb(203, 183, 29);  /* Dark background */
+            padding: 15px; /* Add padding inside */
             border-radius: 10px; /* Rounded corners */
-            border: 2px solid rgb(203, 183, 29); /* Border to create the box effect   */
+            border: 2px solid rgb(203, 183, 29); /* Border to create the box effect */
             display: flex;
-            justify-content: space-around; /* Evenly space items   */
+            justify-content: space-around; /* Evenly space items */
             width: 80%;
-            margin: 20px auto; /* Center it   */
+            margin: 20px auto; /* Center it */
+            align-items: center;
         }
 
-        /* Navbar links   */
+        /* Navbar links */
         .navbar a {
             color: rgb(0, 0, 0);
             text-decoration: none;
             padding: 10px 20px;
             border-radius: 5px;
             transition: 0.3s;
+            font-size: 18px;
         }
 
-        /* Hover effect   */
+        /* Hover effect */
         .navbar a:hover {
             background-color: rgb(227, 213, 107);
+        }
+
+        /* Sign In and Sign Up buttons */
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .auth-buttons a {
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .signin-btn {
+            background-color: #ff8b8b;
+            color: white;
+        }
+
+        .signup-btn {
+            background-color: #ff8b8b;
+            color: white;
+        }
+
+        .signin-btn:hover {
+            background-color: #ff8b8b;
+        }
+
+        .signup-btn:hover {
+            background-color: #ff8b8b;
         }
     </style>
 
@@ -41,55 +76,55 @@
         <a href="joke.html">Dog Jokes</a>
         <a href="adopt.html">Adoption Center</a>
         <a href="training.html">Dog Training</a>
+
+        <!-- Sign In & Sign Up Buttons -->
+        <div class="auth-buttons">
+            <a href="signin.html" class="signin-btn">Sign In</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+        </div>
     </nav>
 
+    <br /><br /><br />
 
-        <br />
-        <br />
-        <br />
+    <h2>What We Are About</h2>
+    <p>At All About Dogs, we believe that dogs are more than just pets—they are loyal companions, loving family members, and lifelong friends...</p>
 
-        <h2>What We Are About</h2>
-        <!--Source - Chatgpt - Prompt: i have a partnered website give me a 100 word sentence about that, add emojis.-->
-        <p>At All About Dogs, we believe that dogs are more than just pets—they are loyal companions, loving family members, and lifelong friends. Whether you’re a first-time dog owner or an experienced pet lover, our website is here to provide you with all the information you need to give your furry friend the best life possible.
-        </p>
-            <h3>We Love Dogs</h3>
-            <p>Dogs have been by our side for thousands of years, offering companionship, protection, and unconditional love. From playful puppies to wise senior dogs, every stage of their life is filled with joy and unique challenges. Understanding your dog’s needs, behavior, and health is essential to building a strong and happy bond with them.</p>            
-            <h3>What You’ll Find on Our Website</h3>
-            <p>🐶 Breed Information – Learn about different dog breeds, their characteristics, temperament, and care requirements to find the perfect fit for your lifestyle.
-            </p>  
-            <p>🏋️‍♂️ Training & Behavior Tips – From potty training to advanced obedience, our expert tips will help you train your pup with patience and positive reinforcement.
-            </p>
-            <p>🥘 Nutrition & Health – A healthy dog is a happy dog! Discover the best diets, grooming practices, and common health concerns to keep your pup in top shape.
-            </p>
-            <p>🏠 Adoption & Rescue – Thinking about bringing a new dog into your home? Learn about adoption options, rescue organizations, and responsible pet ownership.
-            </p>
-            <h3>Join Our Dog-Loving Community</h3>
-            <p>At All About Dogs, we love bringing together dog owners and enthusiasts. Whether you want to share stories, ask for advice, or celebrate your pup, our community is here to support you. Follow us for updates, expert tips, and heartwarming dog stories that will make you smile.
-            </p>
-            <p>Your journey to becoming the best dog owner starts here. Let’s celebrate our four-legged friends together!</p>
-            <p>So please Subscribe to our page!🐕</p>
-            <style>
-                .subscribe-btn {
-                    padding: 10px 20px;
-                    font-size: 16px;
-                    background-color: #981206;
-                    color: white;
-                    border: none;
-                    cursor: pointer;
-                    border-radius: 5px;
-                }
-        
-                .subscribe-btn:hover {
-                    background-color: #fd0202;
-                }
-            </style>
+    <h3>We Love Dogs</h3>
+    <p>Dogs have been by our side for thousands of years, offering companionship, protection, and unconditional love...</p>            
+    
+    <h3>What You’ll Find on Our Website</h3>
+    <p>🐶 Breed Information – Learn about different dog breeds...</p>  
+    <p>🏋️‍♂️ Training & Behavior Tips – From potty training to advanced obedience...</p>
+    <p>🥘 Nutrition & Health – A healthy dog is a happy dog...</p>
+    <p>🏠 Adoption & Rescue – Thinking about bringing a new dog into your home?...</p>
 
-<button class="subscribe-btn" onclick="subscribe()">Subscribe</button>
+    <h3>Join Our Dog-Loving Community</h3>
+    <p>At All About Dogs, we love bringing together dog owners and enthusiasts...</p>
+    <p>Your journey to becoming the best dog owner starts here...</p>
+    <p>So please Subscribe to our page!🐕</p>
 
-<script>
-    function subscribe() {
-        alert("Thank you for subscribing!");
-    }
-</script>
+    <style>
+        .subscribe-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #981206;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .subscribe-btn:hover {
+            background-color: #fd0202;
+        }
+    </style>
+
+    <button class="subscribe-btn" onclick="subscribe()">Subscribe</button>
+
+    <script>
+        function subscribe() {
+            alert("Thank you for subscribing!");
+        }
+    </script>
 </body>
 </html>
