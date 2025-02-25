@@ -4,35 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PawsitiveVibes - Adoption</title>
+    <style>
+        /* Navbar container (change all too <!--) */
+        .navbar {
+            background-color: rgb(203, 183, 29);  /* Dark background   */
+            padding: 15px; /* Add padding inside   */
+            border-radius: 10px; /* Rounded corners   */
+            border: 2px solid rgb(203, 183, 29); /* Border to create the box effect   */
+            display: flex;
+            justify-content: space-around; /* Evenly space items   */
+            width: 80%;
+            margin: 20px auto; /* Center it   */
+        }
+
+        /* Navbar links   */
+        .navbar a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        /* Hover effect   */
+        .navbar a:hover {
+            background-color: rgb(227, 213, 107);
+        }
+
+                /* Sign In and Sign Up buttons */
+    .auth-buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .auth-buttons a {
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .signin-btn {
+        background-color: #ff8b8b;
+        color: white;
+    }
+
+    .signup-btn {
+        background-color: #ff8b8b;
+        color: white;
+    }
+
+    .signin-btn:hover {
+        background-color: #f24545;
+    }
+
+    .signup-btn:hover {
+        background-color: #f24545;
+    }
+    </style>
+
 </head>
 <body style="background-color:bisque">
-        <style>
-            /* Navbar container (change all too <!--) */
-            .navbar {
-                background-color: rgb(203, 183, 29);  /* Dark background   */
-                padding: 15px; /* Add padding inside   */
-                border-radius: 10px; /* Rounded corners   */
-                border: 2px solid rgb(203, 183, 29); /* Border to create the box effect   */
-                display: flex;
-                justify-content: space-around; /* Evenly space items   */
-                width: 80%;
-                margin: 20px auto; /* Center it   */
-            }
-    
-            /* Navbar links   */
-            .navbar a {
-                color: rgb(0, 0, 0);
-                text-decoration: none;
-                padding: 10px 20px;
-                border-radius: 5px;
-                transition: 0.3s;
-            }
-    
-            /* Hover effect   */
-            .navbar a:hover {
-                background-color: rgb(227, 213, 107);
-            }
-        </style>
 
     
 <nav class="navbar">
@@ -41,6 +74,14 @@
     <a href="adopt.html">Adoption Center</a>
     <a href="training.html">Dog Training</a>
 </nav>
+
+<div class="auth-buttons">
+    <a href="signin.html" class="signin-btn">Sign In</a>
+    <a href="signup.html" class="signup-btn">Sign Up</a>
+</div>
+</nav>
+
+<br /><br /><br /><br />
     <!--Source - Chatgpt - Prompt: add a part saying take this for first to register-->
     <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Partnering with the American Kennel Club</h1>
     <p style="font-family:'Courier New', Courier, monospace">We are incredibly proud to partner with the American Kennel Club 🐾, a trusted leader in the world of dogs, pet care, and animal advocacy. This exciting collaboration brings together two passionate organizations with a shared goal: to enhance the lives of dogs and their owners through reliable resources, expert guidance, and a deep love for our furry friends. Whether you're seeking comprehensive information about dog breeds 🐕, expert training techniques 🏆, health and wellness advice 🩺, or insights into responsible pet ownership, we’ve got you covered.<p>

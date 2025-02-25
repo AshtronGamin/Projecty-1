@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PawsitiveVibes - Dog Training</title>
-</head>
-<body style="background-color: bisque;">
+
     <style>
         /* Navbar container */
         .navbar {
@@ -32,7 +31,42 @@
         .navbar a:hover {
             background-color: rgb(227, 213, 107);
         }
+
+                /* Sign In and Sign Up buttons */
+                .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .auth-buttons a {
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .signin-btn {
+            background-color: #ff8b8b;
+            color: white;
+        }
+
+        .signup-btn {
+            background-color: #ff8b8b;
+            color: white;
+        }
+
+        .signin-btn:hover {
+            background-color: #f24545;
+        }
+
+        .signup-btn:hover {
+            background-color: #f24545;
+        }
     </style>
+</head>
+<body style="background-color: bisque;">
+
 
 
 
@@ -42,6 +76,14 @@
         <a href="adopt.html">Adoption Center</a>
         <a href="training.html">Dog Training</a>
     </nav>
+
+    <div class="auth-buttons">
+        <a href="signin.html" class="signin-btn">Sign In</a>
+        <a href="signup.html" class="signup-btn">Sign Up</a>
+    </div>
+</nav>
+
+<br /><br /><br />
 <!--Add iframe embedding to here on how to care for a dog by one of our "workers"-->
 </body>
 </html>
@@ -49,3 +91,58 @@
 <h1>How to take care of a dog - Beginners</h1>
 <p>Here one of our workers, Adam Teo teaching the basics of taking care of a dog.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Zb3Wzs2FcFE?si=PWaxCjrPXZy4RDYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ol>
+<li>Nutrition & Hydration – Provide a balanced diet with high-quality dog food and ensure fresh water is always available.</li>
+<br />
+<li>Exercise & Mental Stimulation – Daily walks, playtime, and engaging activities help maintain physical and mental well-being.</li>
+<br />
+<li>Grooming & Hygiene – Regular brushing, nail trimming, and ear cleaning keep your dog comfortable and healthy.</li>
+<br />
+<li>Veterinary Care – Routine check-ups, vaccinations, and parasite prevention are essential for long-term health.</li>
+<br />
+<li>Training & Socialization – Teaching basic commands and exposing dogs to different environments ensures good behavior and confidence.</li>
+<br />
+<li>Dental Care – Regular brushing and dental treats prevent gum disease and bad breath.</li>
+<br />
+<li>Love & Affection – Dogs thrive on companionship and need a loving, stimulating environment.</li>
+<br />
+<li>>By following these steps, you can ensure your furry friend leads a happy and healthy life.</li>
+</ol>
+<br />
+
+<label for="dog-breed">Out of all of these, which is your favourite?:</label>
+<input list="breeds" id="dog-breed" name="dog-breed" placeholder="Yorkshire Terrier" autocomplete="off">
+
+<datalist id="breeds">
+<option value="Labrador Retriever">
+<option value="German Shepherd">
+<option value="Golden Retriever">
+<option value="Bulldog">
+<option value="Beagle">
+<option value="Yorkshire Terrier">
+<option value="Optional">
+</datalist>
+
+<style>
+    .submit-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #219806;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .submit-btn:hover {
+        background-color: #8cfd02;
+    }
+</style>
+
+<button class="submit-btn" onclick="submit()">Submit</button>
+
+<script>
+    function submit() {
+        alert("Thank you for your feedback!");
+    }
+</script>
